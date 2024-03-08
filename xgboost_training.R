@@ -58,7 +58,7 @@ PARAM$measures <- list(multiclass.aunp, bac)
 #Set directory----
 
 # Aqui se debe poner la carpeta de la computadora local
-setwd("/home/maxibeckel/maestria_datos/neuronal-cell-type-classification/") # Establezco el Working Directory
+setwd("/home/maxibeckel/github/cell-classification-xgboost/") # Establezco el Working Directory
 
 # cargo elsce object donde voy a entrenar el modelo
 sce <- readRDS("./datasets/sce.rds")

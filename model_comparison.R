@@ -34,8 +34,14 @@ library(parallel)
 #library(parallelMap) 
 #parallelStartSocket(cpus = 25)
 
+
 # Aqui se debe poner la carpeta de la computadora local
-setwd("/home/maxibeckel/maestria_datos/neuronal-cell-type-classification/exp") # Establezco el Working Directory
+setwd("/home/maxibeckel/github/cell-classification-xgboost/exp") # Establezco el Working Directory
+
+# cargo elsce object donde voy a entrenar el modelo
+sce <- readRDS("../datasets/sce.rds")
+cell_type         <- as.factor(colData(sce)[,"cluster"])
+
 
 #
 n = 12
